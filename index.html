@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovação de contrato</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="conteudo">
+        <h1>Aceita ser minha eterna princesa?</h1>
+
+        <button onclick="mostrarTexto()"> SIM </button>
+        <button id="no" onclick="desvia(no)" onmouseover="desvia(no)"> NÃO </button>
+
+        <div id="texto" style="display: none;">
+            <p>Olá neném, que bom que você clicou na opção sim (até pq vc n tem opção de recusar), bom, não sei nem por onde começar a descrever tudo o que nós vivemos até aqui, dois anos de altos e baixos, dois anos de muito amor envolvido, dois anos de brigas, mas também dois anos de momentos incríveis que passamos. Eu não consigo nem acreditar que estou completando dois anos de namoro com uma pessoa, logo eu, que não acreditava nem que eu iria conseguir namorar, quem dirá sustentar isso por algum tempo, e o que mais me impressiona não é o simples fato de namorar uma pessoa, mas sim de namorar a mulher mais incrível que possa existir na face da terra, a mulher mais linda, mais inteligente, mais admirável, mais gostosa, mais rabuda, mais divertida, mais engraçada e com um coração gigante, eu posso afirmar com toda a certeza de que você é a mulher que eu sempre quis e antes mesmo de eu te conhecer eu já te desejava, você é a mulher dos meus sonhos, a mulher que eu escolhi pra chamar de MINHA e que em breve eu chamarei de esposa e confesso que estou ansioso por esse dia, em que finalmente não precisaremos mais nos despedir em ocasião alguma e que poderemos fazer tudo o que nós planejamos. Eu espero que esse seja apenas mais um ano ao seu lado, e que após esse ano, venha outro e outro e outro e outro, e que a gente chegue até velhice juntos, com esse mesmo fogo do namoro kkkkkkkk, obrigado por tudo, mesmo eu sendo insuportável, chato, escroto e um péssimo namorado você sempre me dá uma nova chance pra acertar com você e não me abandona, você é sempre uma pessoa incrível e eu tenho muito orgulho da mulher que você está se tornando, te amo e quero passar o resto da minha vida ao teu lado, Feliz 2 anos de namoro pra nós! <span>&#x1F497;&#x1F497;</span></p>
+            <button onclick="redirecionarParaVideo()">Assistir ao Vídeo</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarTexto() {
+            var texto = document.getElementById("texto");
+            var nao = document.getElementById("no");
+
+            // Exibe o texto
+            texto.style.display = "block";
+            // Oculta o botão "NÃO"
+            nao.style.display = "none";
+        }
+        
+        function redirecionarParaVideo() {
+            window.location.href = "video.html";
+        }
+    </script>
+</body>
+</html>
